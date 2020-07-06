@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='node_modules/swiper/css/swiper.css') }}">
+  <script type="text/javascript" src="{{ url_for('static',filename='index.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static',filename='node_modules/swiper/js/swiper.min.js') }}"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <title>Mohamed Ramadan</title>
+</head>
+
+
+<nav>
+  <div id="logo">
+    <img src="{{ url_for('static',filename='m-logo.png') }}">
+  </div>
+
+  <div id="links">
+    <a href="#about"> About </a>
+    <a href="#work"> Work </a>
+    <a href="#contact"> Contact </a>
+  </div>
+
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+
+
+</nav>
+
+<body>
+
+  <div class="responsive">
+    <div class="links-r">
+      <a href="#about" class="r-anim"> About </a>
+      <a href="#work" class="r-anim"> Work </a>
+      <a href="#contact" class="r-anim"> Contact </a>
+    </div>
+  </div>
+
+
+    <!-- Home  -->
+    <div class="home">
+
+      <p id="he">Hello My name is</p>
+      <p id="name"> Mohamed Ramadan .</p>
+      <p id="dv"> I am a software developer .</p>
+      <p id="rst">i'm senior software developer<br>
+        i started working on web applications from almost 2 years<br>
+        and i ‘ve  got alot of exprince in this feild</p>
+
+
+      <a href="mailto:mr856264@gmail"> Contact me </a>
+    </div>
+
+
+
+    <!-- About  -->
+    <div class="about" id="about">
+      <div class="head">
+        <img id="sline" src="{{ url_for('static',filename='smallline.svg') }}">
+        <h1 class="about-lines"> About </h1>
+        <img id="lline" src="{{ url_for('static',filename='lline.svg') }}">
+      </div>
+
+      <p class="t1">Hello My name is Mohamed i am a senior software developer </p>
+      <p class="t1">i enjoy creating things that will be alive on the internet</p>
+      <p class="t1">whether websites or other applications</p>
+      <p class="t1"> my goal is always build profsional applications based on my experince</p>
+      <p class="techs-head">This is some technologies i've been working with recently :</p>
+
+      <ul class="techs">
+        <li> Html </li>
+        <li> Css(Sass) </li>
+        <li> Vue js </li>
+        <li> UI/UX </li>
+        <li> Python </li>
+        <li> Flask </li>
+        <li> Django </li>
+        <li> TKinter </li>
+        <li> JS (ES6+) </li>
+        <li> Swiper js </li>
+        <li> My Sql </li>
+        <li> Psql </li>
+      </ul>
+
+
+    </div>
+
+
+
+    <!-- Work  -->
+    <div class="work" id="work">
+
+      <div class="head">
+        <img id="sline" src="{{ url_for('static',filename='smallline.svg') }}">
+        <h1 class="about-lines"> Work </h1>
+        <img id="lline" src="{{ url_for('static',filename='lline.svg') }}">
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="layout">
+              <a href="https://github.com/m7mdrmdn126/project3-cs50w"><img class="logo" src="{{ url_for('static',filename='gh.png') }}"></a>
+              <p class="header"> Resturant ordering site </p>
+              <p class="job-breef"> This application handling pizza orders <br>
+                for a  resturant where you can order<br>
+                 pizza or other food</p>
+
+
+              <p class="sub">Html5</p>
+              <p class="sub">css3</p>
+              <p class="sub">Django</p>
+              <p class="sub">Js</p>
+
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="layout">
+              <a href="https://github.com/m7mdrmdn126/Project1-cs50"><img class="logo" src="{{ url_for('static',filename='gh.png') }}"></a>
+              <p class="header"> Book review back end site</p>
+              <p class="job-breef"> it's an application where you can <br>
+              search acout books and it will<br>
+              give you some reviews from external<br>
+              api and you can add your review also</p>
+
+
+              <p class="sub">Html5</p>
+              <p class="sub">Flask</p>
+              <p class="sub">Psql</p>
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="layout">
+              <a href="https://github.com/m7mdrmdn126/project2-cs50w"><img class="logo" src="{{ url_for('static',filename='gh.png') }}"></a>
+              <p class="header"> Socket chatting application</p>
+              <p class="job-breef"> It’s a chatting application with high <br>
+              server respnse due to the action of <br>
+              web sockets</p>
+
+              <p class="sub">Html5</p>
+              <p class="sub">css3</p>
+              <p class="sub">Flask</p>
+              <p class="sub">Js</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+
+    <!-- Contact  -->
+    <div class="contact" id="contact">
+      <div class="head">
+        <img id="sline" src="{{ url_for('static',filename='smallline.svg') }}">
+        <h1 class="about-lines"> Contact </h1>
+        <img id="lline" src="{{ url_for('static',filename='lline.svg') }}">
+      </div>
+      <p class="touch"> Get in Touch </p>
+      <p class="contact-msg"> My inbox is always open and i will be happy if i can help </p>
+
+      <div class="social-icons">
+        <img class="si" src="{{ url_for('static',filename='si.svg') }}">
+        <a href="https://www.linkedin.com/in/m7md-ramadan-a2a0991aa/"><img src="{{ url_for('static',filename='li.png') }}"></a>
+          <a href="https://www.facebook.com/profile.php?id=100007864293197"><img src="{{ url_for('static',filename='fb.png') }}"></a>
+          <a href="https://twitter.com/Mohamed82225171"><img src="{{ url_for('static',filename='tw.png') }}"></a>
+          <a href="mailto:mr856264@gmail"><img src="{{ url_for('static',filename='gm.png') }}"></a>
+          <a href="https://www.instagram.com/m7mdrmdan126/"><img src="{{ url_for('static',filename='ig.png') }}"></a>
+        <img class="si" src="{{ url_for('static',filename='si.svg') }}">
+      </div>
+
+    </div>
+
+    <div class="footer">
+       <p> Designed and built by Mohamed Ramadan </p>
+      
+     </div>
+
+
+
+
+
+
+</body>
+</html>
